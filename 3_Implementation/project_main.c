@@ -34,6 +34,12 @@ int main()
         case '%':
         mod();
         break;
+        case 's':
+            sqr();
+            break;
+        case '!':
+            fact();
+            break;
         default:
         printf("Invalid Operations");
     }
@@ -74,4 +80,21 @@ void power(int a,int b){
 void mod(int a,int b){
     int c=a%b;
     printf("%d",c);
+}
+void sqr()
+{
+    int x;
+    scanf("%d",&x);
+    int c=x*x;
+    printf("%d",c);
+}
+void fact()
+{
+    int x,f=1;
+    scanf("%d",&x);
+    for(int i=1;i<=x;i++)
+    {
+        f=f*i;
+    }
+    printf("%d",f);
 }
